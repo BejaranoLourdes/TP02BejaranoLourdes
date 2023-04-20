@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>TP02BejaranoLourdes</title>
+  </head>
+  <body>
+	<h1>EJERCICIO 3</h1>
+	<form th:object="${procesoString}" th:action="@{/stringResultado}" method="post">
+	  <label for="cadena">Cadena: </label>
+	  <input type="text" name="cadena" th:field="*{cadena}" required><br>
+	  <input type="submit" value="Datos finales">
+	</form>
+  </body>
+</html>

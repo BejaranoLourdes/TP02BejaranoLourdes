@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>TP02BejaranoLourdes</title>
+  </head>
+  <body>
+    <h1>EJERCICIO 2</h1>
+    <form th:object="${procesoFecha}" th:action="@{/fechaProcesada}" method="post">
+      <label for="fecha1">Primera Fecha: </label>
+      <input type="date" name="fecha1" th:field="*{fecha1}" required><br>
+      <label for="fecha2">Segunda Fecha: </label>
+      <input type="date" name="fecha2" th:field="*{fecha2}" required><br>
+      <input type="submit" value="Datos finales">
+    </form>
+  </body>
+</html>

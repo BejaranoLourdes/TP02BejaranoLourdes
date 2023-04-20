@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>TP02BejaranoLourdes</title>
+</head>
+<body>
+	<p><b>Nombre y Apellido: </b><span th:text="${persona.nombre}"></span> <span th:text="${persona.apellido}"></span></p>
+	<p><b>Fecha de Nacimiento: </b><span th:text="${persona.fechaNacimiento}"></span></p>
+	<p><b>Edad y signo del Zodiaco: </b><span th:text="${edad}"></span>, <span th:text="${signo}"></span></p>
+    <p><b>Estacion en la que nacio: </b><span th:text="${estacion}"></span></p>
+</body>
+</html>

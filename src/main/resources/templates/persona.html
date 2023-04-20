@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>TP02BejaranoLourdes</title>
+</head>
+<body>
+	<h1>EJERCICIO 1</h1>
+	<form th:object="${persona}" th:action="@{/datos-persona}" method="post">
+	<label for="nombre">Nombre: </label>
+	<input type="text" name="nombre" th:field="*{nombre}" required><br>
+	<label for="apellido">Apellido: </label>
+	<input type="text" name="apellido" th:field="*{apellido}" required><br>
+	<label for="fechaNacimiento">Fecha Nacimiento: </label>
+	<input type="date" name="fechaNacimiento" th:field="*{fechaNacimiento}" required><br>
+	<input type="submit" value="Datos finales">
+	</form>
+</body>
+</html>
